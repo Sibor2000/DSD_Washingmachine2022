@@ -1,0 +1,399 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 26 14:29:44 2022
+# Process ID: 13624
+# Current directory: E:/info/I-2/DSD/washingmachine/washingmachine.runs/synth_1
+# Command line: vivado.exe -log RobertComp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RobertComp.tcl
+# Log file: E:/info/I-2/DSD/washingmachine/washingmachine.runs/synth_1/RobertComp.vds
+# Journal file: E:/info/I-2/DSD/washingmachine/washingmachine.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RobertComp.tcl -notrace
+Command: synth_design -top RobertComp -part xc7a35tcpg236-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2660 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 429.980 ; gain = 98.086
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2488] overwriting existing primary unit timerom [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/timerom.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'RobertComp' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:61]
+INFO: [Synth 8-3491] module 'romandenc' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/romandenc.vhd:34' bound to instance 'RNE' of component 'romandenc' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'romandenc' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/romandenc.vhd:40]
+INFO: [Synth 8-3491] module 'binencoder' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/binencoder.vhd:34' bound to instance 'C1' of component 'binencoder' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/romandenc.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'binencoder' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/binencoder.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'binencoder' (1#1) [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/binencoder.vhd:39]
+INFO: [Synth 8-3491] module 'asyncrom' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/asyncrom.vhd:34' bound to instance 'c2' of component 'asyncrom' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/romandenc.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'asyncrom' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/asyncrom.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'asyncrom' (2#1) [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/asyncrom.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'romandenc' (3#1) [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/romandenc.vhd:40]
+INFO: [Synth 8-3491] module 'tshield' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/tshield.vhd:34' bound to instance 'PWS' of component 'tshield' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'tshield' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/tshield.vhd:41]
+WARNING: [Synth 8-614] signal 'romq' is read in the process but is not in the sensitivity list [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/tshield.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'tshield' (4#1) [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/tshield.vhd:41]
+INFO: [Synth 8-3491] module 'tshield' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/tshield.vhd:34' bound to instance 'RNSS' of component 'tshield' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:170]
+INFO: [Synth 8-3491] module 'tflipflop' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/tflipflop.vhd:34' bound to instance 'PWT' of component 'tflipflop' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'tflipflop' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/tflipflop.vhd:43]
+WARNING: [Synth 8-614] signal 't' is read in the process but is not in the sensitivity list [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/tflipflop.vhd:47]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register q_reg in module tflipflop. This is not a recommended register style for Xilinx devices  [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/tflipflop.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'tflipflop' (5#1) [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/tflipflop.vhd:43]
+INFO: [Synth 8-3491] module 'tflipflop' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/tflipflop.vhd:34' bound to instance 'RNST' of component 'tflipflop' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:172]
+INFO: [Synth 8-3491] module 'twobincount' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/twobincount.vhd:34' bound to instance 'TMPCNT' of component 'twobincount' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'twobincount' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/twobincount.vhd:43]
+WARNING: [Synth 8-614] signal 'loader' is read in the process but is not in the sensitivity list [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/twobincount.vhd:47]
+WARNING: [Synth 8-614] signal 'ce' is read in the process but is not in the sensitivity list [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/twobincount.vhd:47]
+WARNING: [Synth 8-614] signal 'tempq' is read in the process but is not in the sensitivity list [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/twobincount.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'twobincount' (6#1) [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/twobincount.vhd:43]
+INFO: [Synth 8-3491] module 'twobincountthree' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/twobitcountthree.vhd:5' bound to instance 'SPDCNT' of component 'twobincountthree' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'twobincountthree' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/twobitcountthree.vhd:14]
+WARNING: [Synth 8-614] signal 'loader' is read in the process but is not in the sensitivity list [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/twobitcountthree.vhd:18]
+WARNING: [Synth 8-614] signal 'ce' is read in the process but is not in the sensitivity list [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/twobitcountthree.vhd:18]
+WARNING: [Synth 8-614] signal 'tempq' is read in the process but is not in the sensitivity list [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/twobitcountthree.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'twobincountthree' (7#1) [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/twobitcountthree.vhd:14]
+INFO: [Synth 8-3491] module 'washregister' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/washregister.vhd:35' bound to instance 'WSHREG' of component 'washregister' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'washregister' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/washregister.vhd:45]
+WARNING: [Synth 8-614] signal 'load' is read in the process but is not in the sensitivity list [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/washregister.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'washregister' (8#1) [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/washregister.vhd:45]
+INFO: [Synth 8-3491] module 'tflipflop' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/tflipflop.vhd:34' bound to instance 'STATUST' of component 'tflipflop' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:179]
+INFO: [Synth 8-3491] module 'bindec' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/bindec.vhd:34' bound to instance 'tmpled' of component 'bindec' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'bindec' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/bindec.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'bindec' (9#1) [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/bindec.vhd:39]
+INFO: [Synth 8-3491] module 'bindec' declared at 'E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/bindec.vhd:34' bound to instance 'spdled' of component 'bindec' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'RobertComp' (10#1) [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/RobertComp.vhd:61]
+WARNING: [Synth 8-3331] design binencoder has unconnected port hot[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 485.215 ; gain = 153.320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 485.215 ; gain = 153.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 485.215 ; gain = 153.320
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/constrs_1/new/constrom.xdc]
+WARNING: [Vivado 12-507] No nets matched 'PRWSH_IBUF'. [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/constrs_1/new/constrom.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/constrs_1/new/constrom.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'RNS_IBUF'. [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/constrs_1/new/constrom.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/constrs_1/new/constrom.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'TMP_IBUF'. [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/constrs_1/new/constrom.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/constrs_1/new/constrom.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'SPED_IBUF'. [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/constrs_1/new/constrom.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/constrs_1/new/constrom.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/constrs_1/new/constrom.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/constrs_1/new/constrom.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RobertComp_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RobertComp_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 816.191 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 816.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 816.195 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 816.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 816.195 ; gain = 484.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 816.195 ; gain = 484.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 816.195 ; gain = 484.301
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'data_output_reg' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/asyncrom.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'q_reg' [E:/info/I-2/DSD/washingmachine/washingmachine.srcs/sources_1/new/bindec.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 816.195 ; gain = 484.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 11    
+	   4 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module asyncrom 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module romandenc 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      1 Bit        Muxes := 1     
+Module tflipflop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module twobincount 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+Module twobincountthree 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+Module washregister 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (tmpled/q_reg[3]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (tmpled/q_reg[2]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (tmpled/q_reg[1]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (tmpled/q_reg[0]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (spdled/q_reg[3]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (spdled/q_reg[2]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (spdled/q_reg[1]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (spdled/q_reg[0]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (RNE/c2/data_output_reg[5]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (RNE/c2/data_output_reg[4]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (RNE/c2/data_output_reg[3]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (RNE/c2/data_output_reg[2]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (RNE/c2/data_output_reg[1]) is unused and will be removed from module RobertComp.
+WARNING: [Synth 8-3332] Sequential element (RNE/c2/data_output_reg[0]) is unused and will be removed from module RobertComp.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 816.195 ; gain = 484.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 816.195 ; gain = 484.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 816.195 ; gain = 484.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 826.152 ; gain = 494.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 826.152 ; gain = 494.258
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 826.152 ; gain = 494.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 826.152 ; gain = 494.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 826.152 ; gain = 494.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 826.152 ; gain = 494.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 826.152 ; gain = 494.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     5|
+|2     |LUT1 |     1|
+|3     |LUT3 |     8|
+|4     |LUT4 |     5|
+|5     |LUT5 |     8|
+|6     |LUT6 |    15|
+|7     |FDCE |     6|
+|8     |FDPE |     6|
+|9     |FDRE |     7|
+|10    |LDC  |     6|
+|11    |IBUF |    13|
+|12    |OBUF |    16|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------+-----------------+------+
+|      |Instance  |Module           |Cells |
++------+----------+-----------------+------+
+|1     |top       |                 |    96|
+|2     |  PWT     |tflipflop        |     5|
+|3     |  RNST    |tflipflop_0      |     5|
+|4     |  SPDCNT  |twobincountthree |    14|
+|5     |  STATUST |tflipflop_1      |    16|
+|6     |  TMPCNT  |twobincount      |    14|
+|7     |  WSHREG  |washregister     |     6|
+|8     |  tmpled  |bindec           |     2|
++------+----------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 826.152 ; gain = 494.258
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 826.152 ; gain = 163.277
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 826.152 ; gain = 494.258
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 827.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LDC => LDCE: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 31 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 827.863 ; gain = 508.906
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 827.863 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/info/I-2/DSD/washingmachine/washingmachine.runs/synth_1/RobertComp.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RobertComp_utilization_synth.rpt -pb RobertComp_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 26 14:30:16 2022...

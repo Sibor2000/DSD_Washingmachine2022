@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 26 14:30:23 2022
+# Process ID: 11552
+# Current directory: E:/info/I-2/DSD/washingmachine/washingmachine.runs/impl_1
+# Command line: vivado.exe -log RobertComp.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RobertComp.tcl -notrace
+# Log file: E:/info/I-2/DSD/washingmachine/washingmachine.runs/impl_1/RobertComp.vdi
+# Journal file: E:/info/I-2/DSD/washingmachine/washingmachine.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source RobertComp.tcl -notrace
